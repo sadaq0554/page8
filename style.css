@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4a2503;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 250px;
+  padding: 60px;
+  background-color: #4a2503;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  margin-left: 120px;
+}
+
+.footer-nav .social-icons {
+  position: absolute;
+  top: 100px; /* Moved social icons down */
+  left: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-nav .social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-section h3 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.nav-section ul {
+  list-style: none;
+}
+
+.nav-section ul li {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.nav-section ul li:hover {
+  opacity: 0.8;
+}
+
+.banner-container {
+  width: 100%;
+  margin-bottom: 1 px;
+}
+
+.banner {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-top: 2px dashed #fff;
+  pointer-events: none;
+  top: 10px;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.banner-text {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.banner-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.banner-button:hover {
+  transform: scale(1.1);
+}
+
+.arrow {
+  color: #5e2c04;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.hero-section {
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #4a2503;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #4a2503;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+.image-placeholder {
+  max-width: 80vh;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .image-placeholder {
+    max-width: 60vh;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap");
+
+h1,
+h2 {
+  font-family: "Teko", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .banner-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-text {
+    font-size: 1.5rem;
+  }
+
+  .banner-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .banner-button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+}
+
+.containerkow {
+  background-color: white;
+  width: 100%;
+  height: 80vh;
+  padding-top: 20vh;
+}
+
+.containerkow .title h1 {
+  font-size: 6rem;
+}
+
+.containerkow .title h2 {
+  font-size: 9rem;
+}
+
+.containerkow .image-placeholder {
+  position: absolute;
+  top: 140%;
+  left: 40%;
+  transform: translate(-50%, -60%);
+}
+
+.containerkow .image-placeholder img {
+  width: 140%;
+  height: auto;
+}
+
